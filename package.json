@@ -1,0 +1,45 @@
+{
+  "name": "epigone-child",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1shiharaT/epigone-child.git"
+  },
+  "author": "1shiharaT",
+  "license": "GPL v2 or later",
+  "bugs": {
+    "url": "https://github.com/1shiharaT/epigone-child/issues"
+  },
+  "homepage": "https://github.com/1shiharaT/epigone-child",
+  "engines": {
+    "node": ">=0.10.26",
+    "npm": ">=1.4.3"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-cache": "^0.2.1",
+    "gulp-concat": "^2.3.4",
+    "gulp-uglify": "^0.3.1",
+    "gulp-imagemin": "^1.0.0",
+    "gulp-jshint": "^1.8.4",
+    "gulp-load-plugins": "^0.5.3",
+    "gulp-notify": "^1.5.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-wp-rev": "0.0.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-cssshrink": "0.1.4",
+    "gulp-plumber": "^0.6.4",
+    "gulp-sass": "^0.7.3",
+    "browser-sync": "^1.3.5",
+    "node-bourbon": "^1.2.3",
+    "node-neat": "^1.3.0",
+    "psi": "^0.1.2"
+  },
+  "scripts": {
+    "setup": "npm install -g bower",
+    "start": "node node_modules/bower/bin/bower install && gulp watch",
+    "install-bitters" : "bitters install"
+  }
+}
