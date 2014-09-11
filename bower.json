@@ -13,7 +13,9 @@
     "assets/components"
   ],
   "dependencies": {
-    "jquery": "~2.1.0",
-
+    "jquery": "~2.1.0"
+  },
+  "devDependencies": {
+    "font-awesome": "~4.2.0"
   }
 }
