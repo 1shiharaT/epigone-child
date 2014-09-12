@@ -1,4 +1,5 @@
-epigone-child
+epigone-blog
 =============
 
 example child-theme of epigone.
+

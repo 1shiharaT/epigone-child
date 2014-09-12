@@ -1,0 +1,233 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,300");
+[role=main] {
+  padding: 0.5em 2em 2em 0em !important;
+  overflow: hidden; }
+
+body {
+  -webkit-font-smoothing: antialiased; }
+
+a {
+  -webkit-transition: all ease-in 0.1s;
+  transition: all ease-in 0.1s; }
+
+/**
+  * @name Header-Minimal
+  * @description Style for the header-minimal class
+  * @markup
+  *   <div class="header-minimal">
+  *     <div class="header-description"></div>
+  *     <div class="header-logo"></div>
+  *     <div class="header-banner"></div>
+  *   </div>
+  */
+.header-minimal {
+  padding: 2em 0;
+  background-color: #a6cd99;
+  background-image: url("../images/header-bg.png");
+  background-position: 0em 15em;
+  background-size: 100% auto;
+  color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0; }
+  .header-minimal .header-description {
+    background: rgba(33, 117, 155, 0.37);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+  .header-minimal .header-logo {
+    text-align: left;
+    font-size: 3.1em;
+    font-weight: 100;
+    line-height: 1.7em;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 60.0556%;
+    font-family: 'Open Sans';
+    font-weight: 100; }
+    .header-minimal .header-logo a {
+      color: #FFF;
+      text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1); }
+  .header-minimal .header-banner {
+    text-align: right;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 37.58674%;
+    margin-right: 0; }
+
+/**
+  * @name navbar
+  * @description Style for the navbar class
+  * @markup
+  *   <div class="navbar">markup</div>
+  */
+.navbar {
+  margin-top: 2em; }
+  .navbar a {
+    font-weight: 100;
+    font-family: 'Open Sans'; }
+
+.hentry {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 1px solid #e8e8e8;
+  padding: 1em; }
+
+figure.swipe {
+  display: block;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1em; }
+  figure.swipe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; }
+
+/*------------------------------------*\
+    $ENTRY COMMENT
+\*------------------------------------*/
+.entry-meta {
+  background: #185671;
+  padding: 0.2em 1em;
+  color: #FFF;
+  margin-bottom: 1em; }
+  .entry-meta a {
+    color: #FFF; }
+  .entry-meta .byline {
+    font-style: normal;
+    font-size: 1em; }
+
+/**
+  * @name Entry-Header
+  * @description Style for the entry-header class
+  * @markup
+  *   <div class="entry-header">markup</div>
+  */
+.entry-header h1 {
+  font-size: 1.7em;
+  margin-bottom: 1em;
+  line-height: 1.2em; }
+  .entry-header h1:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f192";
+    margin-right: 1.2em; }
+
+/**
+  * @name Entry-Content
+  * @description Style for the entry-content class
+  * @markup
+  *   <div class="entry-content">markup</div>
+  */
+.entry-content h1 {
+  font-size: 1.4em;
+  border-left: 3px solid #e8e8e8;
+  padding-left: 0.5em;
+  line-height: 1.4em;
+  margin: 1em 0 1em; }
+  .entry-content h1:before {
+    content: " ";
+    display: inline-block;
+    width: 15px;
+    height: 15px; }
+.entry-content h2 {
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 1em; }
+.entry-content h3 {
+  margin-bottom: 1em; }
+.entry-content h4 {
+  margin-bottom: 1em; }
+.entry-content h5 {
+  margin-bottom: 1em; }
+.entry-content h6 {
+  margin-bottom: 1em; }
+.entry-content a {
+  text-decoration: underline;
+  color: #21759b;
+  font-weight: bold; }
+.entry-content ul li {
+  margin-bottom: 5px; }
+.entry-content .footer {
+  background-color: #0f3647;
+  color: #FFF; }
+
+#reply-title {
+  font-size: 1.4em;
+  border-left: 3px solid #e8e8e8;
+  padding-left: 0.5em;
+  line-height: 1.4em;
+  margin: 1em 0 1em; }
+  #reply-title:before {
+    content: " ";
+    display: inline-block;
+    width: 15px;
+    height: 15px; }
+
+.screen-reader-text {
+  display: none; }
+
+/**
+  * @name Nav-Links
+  * @description Style for the nav-links class
+  * @markup
+  *   <div class="nav-links">
+  *     <div>
+  *       <a href="">markup</a>
+  *     </div>
+  *   </div>
+  */
+.nav-links div {
+  border: 1px solid #21759b;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  padding: 0.2em 1em 0.3em 1em; }
+  .nav-links div:hover {
+    background-color: #21759b; }
+    .nav-links div:hover a {
+      color: #FFF; }
+  .nav-links div a {
+    color: #0f3647;
+    font-weight: bold; }
+
+/**
+  * @name Button, Input
+  * @description Style for the button, input class
+  * @markup
+  *   <div class="button, input type="submit"">markup</div>
+  */
+.button, input[type="submit"] {
+  color: #FFF;
+  background: #21759b;
+  border-radius: 30px;
+  border: 1px solid #0f3647; }
+
+/**
+  * @name @Media Screen And (Max-Width: 640Px)
+  * @description Style for the @media screen and (max-width: 640px) element
+  */
+@media screen and (max-width: 640px) {
+  .header-minimal {
+    background-size: auto 100%;
+    background-position: top; }
+    .header-minimal .header-logo {
+      font-size: 2em;
+      width: 100%;
+      margin-right: 0px; }
+    .header-minimal .header-banner {
+      font-size: 0.8em;
+      width: 100%;
+      margin-right: 0px; }
+  a img.alignnone {
+    margin-right: 0px; }
+  .entry-header h1 {
+    margin-top: 1em;
+    font-size: 1.2em; } }
