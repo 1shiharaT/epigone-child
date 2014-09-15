@@ -102,7 +102,8 @@ gulp.task('images', function() {
 gulp.task( 'watch', ['browserSync'], function() {
 
   // Watch .scss files
-  gulp.watch('assets/scss/**/*.scss', ['styles', 'theme-styles']);
+  gulp.watch('assets/scss/**/*.scss', ['styles']);
+  gulp.watch('assets/scss/themes/*.scss', ['theme-styles']);
 
   // Watch .js files
   gulp.watch('assets/js/**/*.js', ['plugins', 'scripts']);
