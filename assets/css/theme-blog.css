@@ -50,6 +50,9 @@
 		* @markup
 		*   <div class="entry-content">markup</div>
 		*/
+  /*------------------------------------*\
+	    $COMMENTS
+	\*------------------------------------*/
   /**
 		* @name Reply Title
 		* @description Style for the reply-title id
@@ -120,7 +123,8 @@
     margin-top: 2em; }
     .epigone-child .navbar a {
       font-weight: 100;
-      font-family: 'Open Sans'; }
+      font-family: 'Open Sans';
+      margin-bottom: 1em; }
   .epigone-child .hentry {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -214,6 +218,37 @@
     .epigone-child .entry-content .footer {
       background-color: #0f3647;
       color: #FFF; }
+  .epigone-child .comments {
+    padding: 1em;
+    background: #efd99f; }
+  .epigone-child .comments-title {
+    font-size: 0.8em;
+    color: #d1a324;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    line-height: 1em; }
+  .epigone-child .comment-title {
+    font-size: 1.3em;
+    background: #d1a324;
+    color: #FFF;
+    padding-left: 1em;
+    margin-bottom: 1em; }
+  .epigone-child .comments-list .comment {
+    background: #FFF;
+    padding: 1em; }
+  .epigone-child .comment-author cite {
+    font-style: normal; }
+    .epigone-child .comment-author cite:before {
+      content: "\f0e6";
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin-right: 0.7em; }
+  .epigone-child .comments-content {
+    font-size: 0.8em; }
   .epigone-child #reply-title {
     font-size: 1.4em;
     border-left: 3px solid #e8e8e8;

@@ -9,9 +9,26 @@
  * =====================================================
  */
 
+$include_files = array(
+	array( 'inc/customizer.php' ),
+);
 
+$include_files = $include_files;
+
+foreach ( $include_files as $key => $files ) {
+	if ( $filename = locate_template( $files, false ) ) {
+		load_template( $filename , true );
+	}
+}
+
+/**
+ * Load parent theme file.
+ */
 load_template( get_template_directory() . '/inc/init.php', true );
 
+/**
+ * Child theme setup.
+ */
 add_action( 'init', 'epigone_child_setup' );
 
 function epigone_child_setup() {
@@ -20,6 +37,9 @@ function epigone_child_setup() {
 
 }
 
+/**
+ * This theme original enqueue media.
+ */
 add_action( 'wp_enqueue_scripts', 'epigone_child_scripts', 10 );
 
 function epigone_child_scripts() {

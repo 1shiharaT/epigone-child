@@ -1,6 +1,11 @@
-var $ = jQuery;
-$(function(){
-	var nav = responsiveNav("#header-navbar-collapse", {
+/**
+ * Responsive Nav
+ * ------------------
+ * http://responsive-nav.com/
+ *
+ */
+(function($){
+	var ResponsiveNav = responsiveNav("#header-navbar-collapse", {
 	  animate: true,
 	  transition: 284,
 	  label: "<i class='fa fa-bars'></i>",
@@ -12,5 +17,5 @@ $(function(){
 	  navActiveClass: "js-nav-active",
 	  jsClass: "js",
 	});
+})(jQuery);
 
-});

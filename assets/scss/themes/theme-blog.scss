@@ -102,6 +102,7 @@ $gray: #e8e8e8;
 		a{
 			font-weight: 100;
 			font-family: 'Open Sans';
+			margin-bottom: 1em;
 		}
 
 	}
@@ -273,13 +274,63 @@ $gray: #e8e8e8;
 		}
 
 		.footer{
-			background-color: darken( $primary-color,20% );
+			background-color: darken( $primary-color, 20% );
 			color: #FFF;
 		}
 
 	}
 
 
+	/*------------------------------------*\
+	    $COMMENTS
+	\*------------------------------------*/
+	.comments{
+		padding: 1em;
+		background: lighten( $secondary-color, 30 );
+	}
+
+	.comments-title{
+		font-size: 0.8em;
+		color: $secondary-color;
+		margin-top: 0em;
+		margin-bottom: 2em;
+		line-height: 1em;
+
+	}
+	.comment-title{
+		font-size: 1.3em;
+		background: $secondary-color;
+		color: #FFF;
+		padding-left: 1em;
+		margin-bottom: 1em;
+	}
+
+	.comments-list{
+		.comment{
+			background: #FFF;
+			padding: 1em;
+		}
+	}
+
+	.comment-author{
+		cite{
+			font-style: normal;
+			&:before{
+				content: "\f0e6";
+				display: inline-block;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				margin-right: 0.7em;
+			}
+		}
+	}
+
+	.comments-content{
+		font-size: 0.8em;
+	}
 	/**
 		* @name Reply Title
 		* @description Style for the reply-title id
